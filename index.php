@@ -21,6 +21,9 @@
 		font-style: italic;
 		color: #3c763d;
 	}
+	.success, .failed {
+		margin-bottom: 15px;
+	}
 	</style>
 </head>
 <body>
@@ -67,12 +70,12 @@
 				<br>
 				<div class="row">
 					<div class="col-sm-2 col-sm-offset-4">
-						<button v-on="click: correctAnswer" class="btn btn-block btn-success">
+						<button v-on="click: correctAnswer" class="btn btn-block btn-success success">
 							<span class="glyphicon glyphicon-ok"></span>
 						</button>
 					</div>
 					<div class="col-sm-2">
-						<button v-on="click: wrongAnswer" class="btn btn-block btn-danger">
+						<button v-on="click: wrongAnswer" class="btn btn-block btn-danger failed">
 							<span class="glyphicon glyphicon-remove"></span>
 						</button>
 					</div>
